@@ -60,7 +60,7 @@ services:
       - VALIDATION=http
       - STAGING=false 
       
- adminer:
+  adminer:
    container_name: adm
    image: adminer 
    restart: unless-stopped    
@@ -73,5 +73,3 @@ services:
      ADMINER_USERNAME: ${MYSQL_USER}
      MYSQL_DATABASE: ${MYSQL_DATABASE}
      ADMINER_PASSWORD: ${MYSQL_PASSWORD} 
-
-
